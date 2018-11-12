@@ -1,21 +1,21 @@
 alert("HOME WORK");
 console.log("Простое дз");
 var yourBrowser = "Chrome";
-var ieLog = "We don't support IE browser!";
-var webKitLog = "We support your browser = ";
-var otherLog = "We hope your specific browser works fine";
+var ielog = "We don't support IE browser!";
+var webKitlog = "We support your browser = ";
+var otherlog = "We hope your specific browser works fine";
 
 
 console.log("If result of home work");
 var ifElseResult;
 if (yourBrowser === "IE") {
-    ifElseResult = ieLog;
+    ifElseResult = ielog;
 } else if (yourBrowser === "Chrome" || yourBrowser === "Firefox" || yourBrowser === "Opera" || yourBrowser === "Safari") {
-    ifElseResult = webKitLog + yourBrowser;
+    ifElseResult = webKitlog + yourBrowser;
 } else {
-    ifElseResult = otherLog;
+    ifElseResult = otherlog;
 }
-console.log('IF - ELSE SOLUTION: ', ifElseResult);
+console.log('IF - ElSE SOlUTIOn: ', ifElseResult);
 
 
 console.log("Swith result of home work");
@@ -32,50 +32,50 @@ switch (switchResult) {
     default:
         console.log("We hope your specific browser works fine");
 }
-console.log('SWITCH SOLUTION: ', switchResult);
+console.log('SWITCH SOlUTIOn: ', switchResult);
 
 
 console.log("сложное дз");
 
 
-var Array = ["HTML", 11, "JavaScript", 2, "CSS", 23, 12];
-console.log("Array = ", Array);
+var array = ["HTMl", 11, "JavaScript", 2, "CSS", 23, 12];
+console.log("array = ", array);
 
-Array.push(-5);
-console.log("Array = ", Array);
+array.push(-5);
+console.log("array = ", array);
 
-Array.unshift(1000);
-console.log("Array = ", Array);
+array.unshift(1000);
+console.log("array = ", array);
 
-Array.push("Last array element");
-console.log("Array = ", Array);
+array.push("last array element");
+console.log("array = ", array);
 
-Array.splice(0, 4, 1000, "HTML", 11);
-console.log("Array = ", Array);
+array.splice(0, 4, 1000, "HTMl", 11);
+console.log("array = ", array);
 
-var result = Array.filter(function (item) {
+var result = array.filter(function (item) {
     return typeof item === "number";
 });
-console.log("Array = ", result);
+console.log("array = ", result);
 
-var NewArray = result.map(function (item) {
+var newarray = result.map(function (item) {
     return item * item
 });
-console.log("Array = ", NewArray);
+console.log("array = ", newarray);
 
-var LastArray = Math.max.apply(null, NewArray);
-console.log("Максимальное значение  = ", LastArray);
+var lastarray = Math.max.apply(null, newarray);
+console.log("Максимальное значение  = ", lastarray);
 
 
 console.log("Дополнительно ");
 
-var LastArray = Math.min.apply(null, NewArray);
-console.log("Минимальное значение  = ", LastArray);
+var lastarray = Math.min.apply(null, newarray);
+console.log("Минимальное значение  = ", lastarray);
 
 
 var sum = 0;
 
-for (var  i = 0; i < LastArray.lenght; i++) {
-    sum = sum + LastArray[i];
+for (var  i = 0; i <= newarray.lenght; i++) {
+    sum = sum + newarray[i];
 }
-console.log("Сумма элементов массива = неполучилось", sum);
+console.log("Сумма элементов массива = ", sum);
